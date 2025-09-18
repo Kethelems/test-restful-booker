@@ -7,15 +7,15 @@ Este repositório contém testes automatizados da API https://restful-booker.her
 test-restful-booker/
 ├─ .gitignore
 ├─ tests/
-│  ├─ auth_tests.robot
-│  ├─ booking_tests.robot
-│  ├─ delete_tests.robot
-│  ├─ health_check.robot
-│  └─ update_tests.robot
+│ ├─ auth_tests.robot
+│ ├─ booking_tests.robot
+│ ├─ delete_tests.robot
+│ ├─ health_check.robot
+│ └─ update_tests.robot
 ├─ resources/
-│  ├─ keywords_auth.robot
-│  ├─ keywords_booking.robot
-│  └─ variables.robot
+│ ├─ keywords_auth.robot
+│ ├─ keywords_booking.robot
+│ └─ variables.robot
 
 - tests/ → Contém os casos de teste.
 - resources/ → Contém palavras-chave e variáveis reutilizáveis.
