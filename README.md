@@ -3,7 +3,7 @@
 Este repositório contém testes automatizados da API https://restful-booker.herokuapp.com/ usando Robot Framework.
 
 ## Estrutura do Projeto
-
+```
 test-restful-booker/
 ├─ .gitignore
 ├─ tests/
@@ -16,7 +16,7 @@ test-restful-booker/
 │ ├─ keywords_auth.robot
 │ ├─ keywords_booking.robot
 │ └─ variables.robot
-
+```
 - tests/ → Contém os casos de teste.
 - resources/ → Contém palavras-chave e variáveis reutilizáveis.
 - .gitignore → Ignora arquivos de saída do Robot Framework (output.xml, log.html, report.html) e outros arquivos desnecessários.
