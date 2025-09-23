@@ -14,5 +14,5 @@ Criar Headers Com Autenticacao
     ${headers}=    Create Dictionary
     ...    Content-Type=application/json
     ...    Accept=application/json
-    ...    Authorization=Basic YWRtaW46cGFzc3dvcmQxMjM=
+    ...    Cookie=token=${token}
     RETURN    ${headers}
