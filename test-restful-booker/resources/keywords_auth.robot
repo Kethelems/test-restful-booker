@@ -16,3 +16,11 @@ Criar Headers Com Autenticacao
     ...    Accept=application/json
     ...    Cookie=token=${token}
     RETURN    ${headers}
+
+Validar Token Gerado
+    [Arguments]    ${token}
+    [Documentation]    Valida se o token foi gerado corretamente
+    Should Not Be Empty    ${token}
+    Should Not Be Equal    ${token}    ${None}
+    ${token_length}=    Get Length    ${token}
+    Should Be True    ${token_length} > 10    Token muito curto: ${token}
