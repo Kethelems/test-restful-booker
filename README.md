@@ -1,6 +1,7 @@
 # Testes de API - Restful-Booker
+## Melhorado com Amazon Q
 
-Este repositório contém testes automatizados da API https://restful-booker.herokuapp.com/ usando Robot Framework.
+Este repositório contém testes automatizados da API https://restful-booker.herokuapp.com/ usando Robot Framework, com melhorias implementadas usando Amazon Q como assistente de desenvolvimento.
 
 ## Estrutura do Projeto
 ```

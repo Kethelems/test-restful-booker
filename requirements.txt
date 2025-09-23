@@ -1,0 +1,6 @@
+robotframework==6.1.1
+robotframework-requests==0.9.4
+robotframework-jsonlibrary==0.5
+robotframework-datetime==1.0.6
+requests==2.31.0
+jsonschema==4.19.2

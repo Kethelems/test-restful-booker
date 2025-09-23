@@ -14,5 +14,13 @@ Criar Headers Com Autenticacao
     ${headers}=    Create Dictionary
     ...    Content-Type=application/json
     ...    Accept=application/json
-    ...    Authorization=Basic YWRtaW46cGFzc3dvcmQxMjM=
+    ...    Cookie=token=${token}
     RETURN    ${headers}
+
+Validar Token Gerado
+    [Arguments]    ${token}
+    [Documentation]    Valida se o token foi gerado corretamente
+    Should Not Be Empty    ${token}
+    Should Not Be Equal    ${token}    ${None}
+    ${token_length}=    Get Length    ${token}
+    Should Be True    ${token_length} > 10    Token muito curto: ${token}
